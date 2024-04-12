@@ -1,0 +1,20 @@
+A_program 
+	|--A_programElement 
+		|--A_fnDef 
+			|--A_fnDecl fn foo(
+				|--A_paramDecl 
+					|--A_varDecl 
+						|--A_varDeclScalar a:
+						|--A_type int)->
+			|--A_type MyStruct{
+
+			|--A_codeBlockStmt 
+				|--A_returnStmt ret 
+				|--A_rightVal 
+					|--A_arithExpr 
+						|--A_arithBiOpExpr 
+							|--A_arithExpr 
+								|--A_exprUnit 2*
+							|--A_arithExpr 
+								|--A_exprUnit a;
+}
